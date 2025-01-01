@@ -1,0 +1,10 @@
+<div class="ekart--search--product">
+    <!-- <input class="ekart-search-product-input" [(ngModel)]="searchText" (input) = "onSearchTextChanged()"> -->
+
+    <!-- Using template reference variable -->
+    <input class="ekart-search-product-input" #inputElement>
+    <!-- <button class="btn btn-search" [disabled]="!searchText">Search</button> -->
+    <button class="btn btn-search" (click)="changeSearchText(inputElement)">Search</button>
+</div>
+<div class="ekart-search-result-for" ><p *ngIf="searchText!=''"><strong>Search Result for: </strong>{{searchText}}</p>
+</div>

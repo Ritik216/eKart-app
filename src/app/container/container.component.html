@@ -1,0 +1,17 @@
+<!-- <img src="/assets/iphone15.jpeg"> -->
+<div class="ekart-product-container">
+    <!-- <img [src]="product.pImage">
+    <p>Name: {{product.name}}</p>
+    <p>Price: {{'$' + product.price}}</p>
+    <p>Color: {{product.color}}</p>
+    <p>{{product.inStock > 0 ? "Stock Available": "Not Available"}}</p>
+    <p>{{'Discounted Price: $' + onDiscount()}}</p> -->
+    <!-- <button [disabled]="!(product.inStock > 0)">Buy Now</button>        property binding -->
+    <!-- <input [value]="name" (input)="onNameChange($event)">                       // Event Binding
+    <p>{{name}}</p> -->
+    <!-- <button [disabled]="(addToCart==0)" (click)="addToCartCount(0)">-</button>
+    <span>{{addToCart}}</span>
+    <button [disabled]="(addToCart==product.inStock)" (click)="addToCartCount(1)">+</button> -->
+    <app-search (searchTextChanged)="setSearchText($event)"></app-search>
+    <app-product-list [searchText]="searchText"></app-product-list>
+</div>

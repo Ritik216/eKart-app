@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');
+/* @import url("~.././node_modules/bootstrap/dist/css/bootstrap.min.css"); */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    padding: 0 10px;
+    color: black;
+}
+
+a:hover{
+    font-size: 25px;
+    color: #3d1abb;
+}

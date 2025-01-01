@@ -1,0 +1,20 @@
+.ekart--top-header{
+    height: 5vh;
+    background-color: #28282B;
+    text-align: center;
+    color: white;
+    padding-top: 1.5vh;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* p{
+    animation-name: textUpDown;
+    animation-duration: 5s;
+}
+
+@keyframes textUpDown {
+    0% {color: white;top:0px; bottom:0px;}
+    50% {color: black;top:200px;bottom: 200px;}
+    100% {color: white;top: 0px;bottom: 200px;}
+} */

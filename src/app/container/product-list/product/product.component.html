@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-image-style">
+        <p class="heart"><i class="fa fa-heart" aria-hidden="true" [ngStyle] = '{color: product.rating.rate>3? "Green": "Red"}'></i>{{' ' + product.id}}</p>
+        <img class="card-img-top" [src]="product.image" alt="Card image cap">
+        <i></i>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{product.title}}</h5>
+      <p class="card-text">{{product.category}}</p>
+      <p class="card-text" [ngStyle] = '{fontWeight: "bold", color: product.rating.rate>3? "Green": "Red"}'>{{'Rating ' + product.rating.rate}} <i class="fa fa-star" aria-hidden="true"></i></p>
+    </div>
+  </div>

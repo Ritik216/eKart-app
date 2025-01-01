@@ -1,0 +1,15 @@
+.ekart--top--bar{
+    width: auto;
+    /* display: block; */
+    /* display: flex; */
+    /* text-align: right;
+    text-align: right; */
+    padding-top: 3px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    color: #36454f;
+    font-size: 18px;
+    /* display: flex;
+    text-align: center; */
+    /* align-items: center; */
+}
