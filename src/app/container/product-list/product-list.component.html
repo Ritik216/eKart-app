@@ -1,7 +1,7 @@
 <app-filter [all]="allCount" [mens]="mensCount" [womens]="womensCount" [others]="othersCount" (selectedFilterRadioButtonChanged)="onFilterChanged($event)"></app-filter>
 
 <div class="product-list-container">
-  <div *ngFor="let prod of products">
+  <div *ngFor="let prod of products" (click)="selectedProduct = prod">
     <app-product [product] = "prod" *ngIf = "searchText==='' || prod.title.toLowerCase().includes(searchText) || prod.category.toLowerCase().includes(selectedFilterRadioButton)" ></app-product>
     <!-- *ngIf="selectedFilterRadioButton === 'all'" || (prod && (/men/.test(prod.category).toString()) === 'true') -->
   </div>

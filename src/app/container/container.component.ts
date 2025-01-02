@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @Component({
   selector: 'app-container',
@@ -44,4 +45,7 @@ export class ContainerComponent implements OnInit {
     this.searchText=val
     console.log("Ritik Bansal" + this.searchText)
   }
+
+  @ViewChild('ProductListComponent') productListComponent:ProductListComponent;
+
 }

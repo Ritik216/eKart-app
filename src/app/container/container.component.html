@@ -13,5 +13,6 @@
     <span>{{addToCart}}</span>
     <button [disabled]="(addToCart==product.inStock)" (click)="addToCartCount(1)">+</button> -->
     <app-search (searchTextChanged)="setSearchText($event)"></app-search>
-    <app-product-list [searchText]="searchText"></app-product-list>
+    <app-product-list [searchText]="searchText" #productListComponent></app-product-list>
+    <app-product-detail [productListInput] = "productListComponent" *ngIf="productListComponent.selectedProduct"></app-product-detail>
 </div>

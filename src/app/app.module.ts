@@ -13,6 +13,7 @@ import { ProductListComponent } from './container/product-list/product-list.comp
 import { ProductComponent } from './container/product-list/product/product.component';
 import { DarklightModeComponent } from './darklight-mode/darklight-mode.component';
 import { FilterComponent } from './container/product-list/filter/filter.component';
+import { ProductDetailComponent } from './container/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FilterComponent } from './container/product-list/filter/filter.componen
     ProductListComponent,
     ProductComponent,
     DarklightModeComponent,
-    FilterComponent
+    FilterComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

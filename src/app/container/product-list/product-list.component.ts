@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
+import { Product } from './../../Models/Product';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProductListComponent implements OnInit {
   products:any[]=[];
+  selectedProduct:Product;
   // clickCount:number=0;
   constructor() { }
   url="https://fakestoreapi.com/products";
